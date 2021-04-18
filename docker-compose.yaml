@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  admin-ui:
+    container_name: admin-ui
+    build:
+      context: .
+    environment:
+      - API_URL='http://localhost:9001'
+    ports:
+      - "3000:3000"
+
