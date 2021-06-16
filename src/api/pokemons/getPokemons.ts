@@ -5,7 +5,7 @@ const getProcessingCards = async ({
   offset,
   limit,
 }: GetPokemonsRequest): Promise<GetPokemonsResponse> => {
-  return await api.get('pokemon', {
+  return await api.get('/pokemon', {
     params: {
       offset,
       limit,
